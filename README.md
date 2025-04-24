@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📦 Item CSV Processor
 
-## Getting Started
+Welcome to the Item CSV Processor app. This tool allows you to upload, clean, and enhance product descriptions in CSV format with a few easy steps.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Steps to Use the App
+
+### 1. Upload your `item.csv` file
+
+- Drag & drop your `item.csv` into the upload area.
+- A preview of your CSV data will appear immediately.
+
+### 2. Clean Descriptions
+
+- Click **“Clean Descriptions”** to remove **deprecated `<font>` tags**.
+- Each `<font>` tag is replaced with a `<span>` that preserves styles like `color`, `size`, etc.
+- The preview updates to reflect the cleaned HTML output.
+
+### 3. Insert SEO Keywords
+
+- Click **“Insert SEO Keywords”** to inject keywords into descriptions:
+  - **First keyword** is prepended in a `<span>` (e.g., `[Summer Sale] Product description…`)
+  - A footer `<div>` is appended: `🔍 Popular: Keyword2, Keyword3`
+- These keywords are useful for boosting product visibility.
+
+### 4. Export the Result
+
+- Click **“Export Result”** to download your updated CSV.
+- The new file includes all cleaned and keyword-enhanced descriptions.
+
+---
+
+## 🧑‍💻 Additional Feature
+
+### 🧪 Run the Puppeteer Script
+
+You can run a test automation flow to:
+
+1. Connect to a headless browser via Browserless.io
+2. Log in to a mock login page (Herokuapp)
+3. Capture a screenshot
+4. Return the image for frontend preview
+
+Use this to verify that your automation infrastructure is working properly.
+
+---
+
+## 🔧 Configuration
+
+To use Puppeteer with Browserless, create a `.env.local` file in your project root:
+
+```env
+BROWSERLESS_ENDPOINT=wss://production-sfo.browserless.io?token=YOUR_API_TOKEN_HERE
+
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

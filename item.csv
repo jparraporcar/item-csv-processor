@@ -1,0 +1,5 @@
+商品ID,商品名,商品説明,販売価格,在庫数
+coat001,Winter Coat,<font color='blue'>Warm coat</font> for <b>cold</b> weather. Great for <u>outdoors</u>.,9980,20
+hat001,Wool Hat,Stylish <font face='Arial'>hat</font> to keep your head warm. Best used during <b>winter</b> months.,1980,50
+boots001,Rain Boots,<div class='desc'>Durable <font size='5'>boots</font> for rainy days.<br>Available in black and red.</div>,6980,15
+jacket001,Hiking Jacket,A <span style='color:green;'>lightweight</span> option for spring hikes. <font color='gray'>Limited edition!</font>,8500,10
